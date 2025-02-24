@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: 'postgres'
+      POSTGRES_HOST_AUTH_METHOD: 'trust'
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - '8080:5432'
+  server:
+    build: ./
+    command: npm run server
+    network_mode: host
+    depends_on:
+      - postgres
+    ports:
+      - 3000:3000

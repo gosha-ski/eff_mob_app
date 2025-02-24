@@ -1,0 +1,28 @@
+{
+  "name": "ef_mob",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "ts-node ./src/server.ts",
+    "connect": "ts-node ./src/data-access/db-connection.ts",
+    "tests": "ts-node ./tests/fill.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "express": "^4.21.2",
+    "mongodb": "^6.13.1",
+    "pg": "^8.13.3",
+    "prettier": "^3.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "uuid": "^11.1.0",
+    "validator": "^13.12.0"
+  }
+}
