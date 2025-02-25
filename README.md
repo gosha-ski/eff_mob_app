@@ -1,3 +1,6 @@
+mail: yaren042@mail.ru
+yandex: goshanyaren@yandex.ru
+
 для запуска приложения запустите по очереди
 
 ```
